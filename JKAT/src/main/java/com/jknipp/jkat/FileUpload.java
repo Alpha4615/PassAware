@@ -91,7 +91,8 @@ public class FileUpload {
                          */
                         //"http://universium.net/jkatWeb/"
                         // "https://secure3177.hostgator.com/~josh06/jkatWeb/"
-                               "http://thermalninja.com/jkatWeb"
+                        //"http://thermalninja.com/jkatWeb"
+                        "https://lightningcoders.com/jkatWeb"
                                 + "/upload.php");
 
                 MultipartEntity entity = new MultipartEntity(
@@ -153,8 +154,11 @@ public class FileUpload {
                     JSONObject JResponse = new JSONObject(sResponse);
                     String success = JResponse.getString("SUCCESS");
                     String message = JResponse.getString("MESSAGE");
+                    String extra = JResponse.getString("EXTRA");
+
                     if (success.equals("0")) {
-                        Log.e(TAG, "Server uploader returned a well-formed rejection response");
+                        Log.e(TAG, "Server uploader returned a well-formed rejection response: " + message);
+                        Log.e(TAG, extra);
                         Integer uploadCount = sItem.getUploadAttemptCount();
                         sItem.setReasonScheduled(ScheduleItem.REASON_UPLOADFAILED);
                         sItem.setUploadAttemptCount(uploadCount + 1);

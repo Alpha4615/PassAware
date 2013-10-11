@@ -1,6 +1,7 @@
 package com.jknipp.jkat;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.hardware.Camera;
 import android.util.Log;
 import android.view.SurfaceHolder;
@@ -17,11 +18,14 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private SurfaceHolder mHolder;
     private Camera mCamera;
     private Camera.PictureCallback mJpegCallback;
+    private SharedPreferences mPreferences;
+    private Context mContext;
 
     public CameraPreview(Context context, Camera camera, Camera.PictureCallback jpegCallback) {
         super(context);
         mCamera = camera;
         mJpegCallback = jpegCallback;
+        mContext = context;
         // Install a SurfaceHolder.Callback so we get notified when the
         // underlying surface is created and destroyed.
         mHolder = getHolder();
@@ -67,11 +71,19 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         try {
             mCamera.setPreviewDisplay(mHolder);
             mCamera.startPreview();
+            mPreferences = mContext.getSharedPreferences(Const.PREFERENCES_FILE, Context.MODE_PRIVATE);
+
+            int delay = Integer.parseInt(mPreferences.getString("delay", "0"));
+
+            Log.d(TAG, "sleeping for " + delay);
+            Thread.sleep(delay);
+            Log.d(TAG, "Woke up");
             cameraInterfaceActivity.muteShutter();
             mCamera.takePicture(null, null, mJpegCallback);
             cameraInterfaceActivity.unmuteShutter();
 
         } catch (Exception e) {
+            e.printStackTrace();
             Log.d(TAG, "Error starting camera preview: " + e.getMessage());
         }
     }

@@ -177,7 +177,7 @@ public class cameraInterfaceActivity extends Activity {
             Camera c = null;
             try {
                 c = Camera.open(cameraChoice); // attempt to get a Camera instance
-                c.setDisplayOrientation(180);
+                //  c.setDisplayOrientation(180);
                 if (c == null)
                     Log.i("JKAT", "Returning new camera instance");
             } catch (Exception e) {

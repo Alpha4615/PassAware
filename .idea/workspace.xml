@@ -40,8 +40,17 @@
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="JKAT Tag" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="7aca13a6-aece-45f8-8ee4-59d8785564b9" name="Default" comment="" />
+    <list default="true" readonly="true" id="7aca13a6-aece-45f8-8ee4-59d8785564b9" name="Default" comment="Adding code to support delays">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java" afterPath="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" afterPath="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java" afterPath="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="JKAT.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,22 +83,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="108" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="180" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
+      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="184" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -119,7 +113,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="139" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
+      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="140" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -134,7 +128,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="152" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
+      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="153" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -149,7 +143,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="123" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
+      <breakpoint url="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" line="124" class="com.jknipp.jkat.FileUpload.ImageUploadTask" package="com.jknipp.jkat">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -214,7 +208,7 @@
       <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="228" column="41" selection-start="9212" selection-end="9266" vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="6069">
+            <state line="228" column="41" selection-start="9212" selection-end="9266" vertical-scroll-proportion="0.0" vertical-offset="3876" max-vertical-offset="5610">
               <folding />
             </state>
           </provider>
@@ -229,11 +223,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUpload.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FileUpload.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="41" selection-start="8158" selection-end="8158" vertical-scroll-proportion="0.110192835" vertical-offset="2901" max-vertical-offset="3621">
+            <state line="94" column="30" selection-start="3275" selection-end="3275" vertical-scroll-proportion="-4.68" vertical-offset="1090" max-vertical-offset="3689">
+              <folding>
+                <element signature="e#1780#1820#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="26" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceAdminMgr.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/DeviceAdminMgr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="8" selection-start="562" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="935">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,16 +257,34 @@
       <file leaf-file-name="strings_activity_settings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JKAT/src/main/res/values/strings_activity_settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="46" selection-start="1178" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1683">
+            <state line="30" column="46" selection-start="1178" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1683">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cameraInterfaceActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cameraInterfaceActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="17" selection-start="4960" selection-end="4960" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="3978">
+            <state line="180" column="20" selection-start="6776" selection-end="6776" vertical-scroll-proportion="0.334873" vertical-offset="2507" max-vertical-offset="3570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CameraPreview.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="75" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.0" vertical-offset="1001" max-vertical-offset="1496">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Const.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/Const.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="47" selection-start="186" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
@@ -259,8 +293,18 @@
       <file leaf-file-name="pref_general.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JKAT/src/main/res/xml/pref_general.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="935">
-              <folding />
+            <state line="24" column="26" selection-start="916" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="935">
+              <folding>
+                <element signature="e#155#183#0" expanded="false" />
+                <element signature="e#208#242#0" expanded="false" />
+                <element signature="e#366#396#0" expanded="false" />
+                <element signature="e#594#626#0" expanded="false" />
+                <element signature="e#812#838#0" expanded="false" />
+                <element signature="e#945#971#0" expanded="false" />
+                <element signature="e#1242#1268#0" expanded="false" />
+                <element signature="e#1285#1319#0" expanded="false" />
+                <element signature="e#1590#1619#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -278,8 +322,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -779,19 +829,19 @@
         <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/Credits.java" />
         <option value="$PROJECT_DIR$/JKAT/src/main/res/values/strings_credits.xml" />
         <option value="$PROJECT_DIR$/JKAT/src/main/res/layout/activity_credits.xml" />
-        <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" />
         <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/DataHandler.java" />
         <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/ScheduleItem.java" />
         <option value="$PROJECT_DIR$/JKAT/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/MainActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/JKAT/build.gradle" />
-        <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java" />
-        <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java" />
         <option value="$PROJECT_DIR$/JKAT/src/main/res/values/strings_activity_settings.xml" />
         <option value="$PROJECT_DIR$/JKAT/src/main/res/xml/pref_general.xml" />
         <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java" />
+        <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java" />
+        <option value="$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java" />
       </list>
     </option>
   </component>
@@ -867,6 +917,128 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="JKATProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKATProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKATProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKATProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKATProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKATProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JKAT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1193,26 +1365,26 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15256588" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32177532" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33841887" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19111969" sideWeight="0.19471489" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32454923" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44244105" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44244105" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17310168" sideWeight="0.6185853" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.6782247" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32882884" sideWeight="0.55755895" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2059202" sideWeight="0.55755895" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882884" sideWeight="0.8474341" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24710424" sideWeight="0.67128986" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3814147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33569586" sideWeight="0.65785813" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991655" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1252,7 +1424,10 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Adding code to support delays" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding code to support delays" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1262,20 +1437,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JKATProject.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JKAT/src/main/res/values/strings_activity_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="46" selection-start="1178" selection-end="1200" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="17" selection-start="4960" selection-end="4960" vertical-scroll-proportion="0.0" vertical-offset="2278" max-vertical-offset="3978">
@@ -1286,14 +1447,17 @@
     <entry file="file://$PROJECT_DIR$/JKAT/src/main/res/xml/pref_general.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="21" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="40" selection-start="2512" selection-end="2540" vertical-scroll-proportion="0.0" vertical-offset="666" max-vertical-offset="1887">
-          <folding />
+          <folding>
+            <element signature="e#155#183#0" expanded="false" />
+            <element signature="e#208#242#0" expanded="false" />
+            <element signature="e#366#396#0" expanded="false" />
+            <element signature="e#594#626#0" expanded="false" />
+            <element signature="e#812#838#0" expanded="false" />
+            <element signature="e#945#971#0" expanded="false" />
+            <element signature="e#1242#1268#0" expanded="false" />
+            <element signature="e#1285#1319#0" expanded="false" />
+            <element signature="e#1590#1619#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1307,13 +1471,6 @@
         <state line="15" column="5" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="2" selection-start="1029" selection-end="2664" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/ScheduleItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="37" selection-start="2550" selection-end="2550" vertical-scroll-proportion="0.0" vertical-offset="1446" max-vertical-offset="1904">
@@ -1321,14 +1478,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/Const.java">
+    <entry file="file://$PROJECT_DIR$/JKATProject.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="80" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="17" selection-start="4960" selection-end="4960" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="3570">
+        <state line="10" column="22" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
@@ -1342,8 +1494,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JKAT/src/main/res/xml/pref_general.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="935">
-          <folding />
+        <state line="24" column="26" selection-start="916" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="197" max-vertical-offset="935">
+          <folding>
+            <element signature="e#155#183#0" expanded="false" />
+            <element signature="e#208#242#0" expanded="false" />
+            <element signature="e#366#396#0" expanded="false" />
+            <element signature="e#594#626#0" expanded="false" />
+            <element signature="e#812#838#0" expanded="false" />
+            <element signature="e#945#971#0" expanded="false" />
+            <element signature="e#1242#1268#0" expanded="false" />
+            <element signature="e#1285#1319#0" expanded="false" />
+            <element signature="e#1590#1619#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,16 +1516,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JKATProject.iml">
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/content/SharedPreferences.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="6" column="17" selection-start="145" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/DeviceAdminMgr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="8" selection-start="562" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="83" max-vertical-offset="935">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="186" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/CameraPreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="75" selection-start="3128" selection-end="3128" vertical-scroll-proportion="0.0" vertical-offset="1001" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JKAT/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/FileUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="41" selection-start="8158" selection-end="8158" vertical-scroll-proportion="0.110192835" vertical-offset="2901" max-vertical-offset="3621">
+        <state line="94" column="30" selection-start="3275" selection-end="3275" vertical-scroll-proportion="-4.68" vertical-offset="1090" max-vertical-offset="3689">
+          <folding>
+            <element signature="e#1780#1820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JKAT/src/main/java/com/jknipp/jkat/cameraInterfaceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="20" selection-start="6776" selection-end="6776" vertical-scroll-proportion="0.334873" vertical-offset="2507" max-vertical-offset="3570">
           <folding />
         </state>
       </provider>
