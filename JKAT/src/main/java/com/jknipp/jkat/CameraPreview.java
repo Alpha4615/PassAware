@@ -3,11 +3,14 @@ package com.jknipp.jkat;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.hardware.Camera;
+import android.os.Handler;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * A basic Camera preview class
@@ -75,13 +78,22 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
             int delay = Integer.parseInt(mPreferences.getString("delay", "0"));
 
-            Log.d(TAG, "sleeping for " + delay);
-            Thread.sleep(delay);
-            Log.d(TAG, "Woke up");
-            cameraInterfaceActivity.muteShutter();
-            mCamera.takePicture(null, null, mJpegCallback);
-            cameraInterfaceActivity.unmuteShutter();
-
+            final Handler handler = new Handler();
+            Timer t = new Timer();
+            Log.d(TAG, "Sleeping for " + delay);
+            t.schedule(new TimerTask() {
+                public void run() {
+                    handler.post(new Runnable() {
+                        public void run() {
+                            Log.d(TAG, "dreaming!");
+                            cameraInterfaceActivity.muteShutter();
+                            mCamera.takePicture(null, null, mJpegCallback);
+                            cameraInterfaceActivity.unmuteShutter();
+                        }
+                    });
+                }
+            }, delay);
+            Log.d(TAG, "woke up! :)");
         } catch (Exception e) {
             e.printStackTrace();
             Log.d(TAG, "Error starting camera preview: " + e.getMessage());
