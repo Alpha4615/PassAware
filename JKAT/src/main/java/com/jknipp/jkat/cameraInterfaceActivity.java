@@ -30,7 +30,8 @@ public class cameraInterfaceActivity extends Activity {
     private static Activity thisActivity;
     private int mWhichCamera;
     protected boolean pictureTaken = false;
-
+    private final String TAG = "cameraInterfaceActivity";
+    private final static String static_TAG = "cameraInterfaceActivity";
 
     private Camera.PictureCallback mJpegCallback = new Camera.PictureCallback() {
         public void onPictureTaken(byte[] data, Camera camera) {
@@ -50,12 +51,12 @@ public class cameraInterfaceActivity extends Activity {
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
-                Log.e("JKAT", "Cannot write JPEG:" + e.getMessage());
+                Log.e(TAG, "Cannot write JPEG:" + e.getMessage());
             } catch (IOException e) {
                 e.printStackTrace();
-                Log.e("JKAT", "Cannot write JPEG, IOException:" + e.getMessage());
+                Log.e(TAG, "Cannot write JPEG, IOException:" + e.getMessage());
             }
-            Log.d("JKAT", "onPictureTaken - " + FILENAME);
+
             if (FileWritten) {
                 ScheduleItem newItem = new ScheduleItem();
                 if (!isNetworkConnectionAvailable()) { // queue this for later!
@@ -76,10 +77,10 @@ public class cameraInterfaceActivity extends Activity {
                 writer.addSchedule(newItem);
 
                 if (uploadNow == true) {
-                    Log.d("JKAT", "Starting upload");
+                    Log.d(TAG, "Starting upload");
                     FileUpload uploader = new FileUpload(thisActivity, newItem, writer, preferences);
                     uploader.doUpload();
-                    Log.d("JKAT", "Upload call finished (it's async)");
+                    Log.d(TAG, "Upload call finished (it's async)");
                 } else {
                     if (!isServiceRunning()) {
                         Log.i("ServiceStarter", "Starting Service from cameraInterfaceActivity");
@@ -106,7 +107,7 @@ public class cameraInterfaceActivity extends Activity {
     }
 
     public static void suicide() {
-        Log.d("JKAT", "Self-Aborting because I'm finished.");
+        Log.d(static_TAG, "Self-Aborting because I'm finished.");
         thisActivity.finish();
     }
 
@@ -179,15 +180,15 @@ public class cameraInterfaceActivity extends Activity {
                 c = Camera.open(cameraChoice); // attempt to get a Camera instance
                 //  c.setDisplayOrientation(180);
                 if (c == null)
-                    Log.i("JKAT", "Returning new camera instance");
+                    Log.i(static_TAG, "Returning new camera instance");
             } catch (Exception e) {
                 // Camera is not available (in use or does not exist)
-                Log.e("JKAT", "Cannot find camera: " + e.getMessage());
+                Log.e(static_TAG, "Cannot find camera: " + e.getMessage());
 
             }
             return c; // returns null if camera is unavailable
         } else {
-            Log.i("JKAT", "Returning found camera instance");
+            Log.i(static_TAG, "Returning found camera instance");
             return currentCamera;
         }
     }
@@ -196,7 +197,7 @@ public class cameraInterfaceActivity extends Activity {
         if (mCamera != null) {
             mCamera.release();        // release the camera for other applications
             mCamera = null;
-            Log.i("JKAT", "Released camera");
+            Log.i(TAG, "Released camera");
 
         }
     }
@@ -212,7 +213,7 @@ public class cameraInterfaceActivity extends Activity {
     protected void onResume() {
         super.onResume();
         if (pictureTaken) {
-            Log.d("yo", "picture already taken, man!");
+            Log.d(TAG, "Picture has already been taken");
             finish();
         }
         mCamera = this.getCameraInstance(mWhichCamera, mCamera);
