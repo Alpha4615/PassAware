@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5.+'
+    }
+}
+
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://www.bugsense.com/gradle/'
+    }
+}
+
+dependencies {
+	compile 'com.android.support:support-v4:13.0.+'
+    compile "org.apache.httpcomponents:httpmime:4.2.3"
+    compile "com.bugsense.trace:bugsense:3.5"
+    compile 'com.android.support:appcompat-v7:18.0.0'
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "17.0.0"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 16
+    }
+}
+
+

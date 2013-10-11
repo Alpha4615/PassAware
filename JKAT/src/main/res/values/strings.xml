@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PassAware</string>
+    <string name="launcher_settings">PassAware Settings</string>
+    <string name="package_name">com.jknipp.jkat</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_debug">Debug</string>
+    <string name="test">This is a test</string>
+    <string name="welcome">Thank you for installing the tester version of my application. Please make sure this application is set as a Device Administrator. If you want to uninstall it after testing, please be sure to remove this Device Administrator status!</string>
+    <string name="sample_device_admin">PassAware</string>
+    <string name="sample_device_admin_description">Monitors lock screen for invalid password attempts so application may take a snapshot</string>
+    <string name="title_activity_debug">Debug</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="exception_message">An exception has been raised: </string>
+    <string name="uploadURL">http://universium.net/jkatWeb/</string>
+    <string name="WebServiceURL">http://universium.net/jkatWeb/</string>
+    <string name="title_activity_credits">Credits</string>
+
+    <string name="pref_deviceAdmin">Device Administrator</string>
+    <string name="pref_deviceAdmin_summary">This application requires device administrator status in order to function. Click here and check "PassAware" to authorize this status.</string>
+
+</resources>

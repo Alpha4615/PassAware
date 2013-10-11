@@ -1,0 +1,15 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.jknipp.jkat.SettingsActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="com.jknipp.jkat.SettingsActivity$CreditsPreferenceFragment"
+        android:title="@string/pref_header_credits" />
+
+
+</preference-headers>
+<!-- From: file:/C:/Users/Jonathan/AndroidStudioProjects/JKATProject/JKAT/src/main/res/xml/pref_headers.xml -->

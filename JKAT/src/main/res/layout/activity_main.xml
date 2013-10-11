@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:id="@+id/layout">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:text="@string/welcome"
+               />
+
+    <ToggleButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/adminToggle"
+            android:layout_gravity="center"
+            android:textOn="Device Admin Enabled"
+            android:textOff="Device Admin Disabled"
+            android:clickable="true"
+            android:checked="false"
+            android:onClick="EnableDeviceAdminBtn" />
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/lockBtn"
+            android:layout_gravity="center"
+            android:onClick="lockDevice"
+            android:text="Lock Device"/>
+
+
+</LinearLayout>

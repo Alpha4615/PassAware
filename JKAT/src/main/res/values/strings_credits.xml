@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="credits_header_graphics">Graphics</string>
+    <string name="credits_launcherIcon">Launcher Camera Icon</string>
+    <string name="credits_launcherIcon_value">www.wpzoom.com</string>
+
+</resources>
