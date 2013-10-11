@@ -103,6 +103,7 @@ public class DataHandler extends SQLiteOpenHelper {
                 Integer.parseInt(cursor.getString(6)) // in process
                 );
 
+        db.close();
         // return item
         return item;
     }
@@ -139,6 +140,7 @@ public class DataHandler extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
         }
 
+        db.close();
         return scheduleItemList;
     }
 
@@ -176,7 +178,7 @@ public class DataHandler extends SQLiteOpenHelper {
                 scheduleItemList.add(contact);
             } while (cursor.moveToNext());
         }
-
+        db.close();
         return scheduleItemList;
     }
 
@@ -204,7 +206,7 @@ public class DataHandler extends SQLiteOpenHelper {
         values.put(KEY_UPLOAD_ATTEMPT_COUNT, item.getUploadAttemptCount());
         values.put(KEY_IN_PROCESS, item.getInProcess());
 
-        Log.i(TAG, "New inProcess! "+ item.getInProcess());
+        Log.i(TAG, "New in Process! " + item.getInProcess());
         int result = db.update(TABLE_SCHEDULE, values, WHERE, whereArgs);
 
         db.close();
