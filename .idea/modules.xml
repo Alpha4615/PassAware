@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JKAT/JKAT.iml" filepath="$PROJECT_DIR$/JKAT/JKAT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JKAT-AppEngine/JKAT-AppEngine.iml" filepath="$PROJECT_DIR$/JKAT-AppEngine/JKAT-AppEngine.iml" />
       <module fileurl="file://$PROJECT_DIR$/JKATProject.iml" filepath="$PROJECT_DIR$/JKATProject.iml" />
     </modules>
   </component>

@@ -2,6 +2,8 @@
 <resources>
 
     <!-- From: file:/C:/Users/Jonathan/AndroidStudioProjects/JKATProject/JKAT/src/main/res/values-sw720dp-land/dimens.xml -->
+    <eat-comment />
+
     <dimen name="activity_horizontal_margin">128dp</dimen>
 
 </resources>
